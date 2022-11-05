@@ -1,0 +1,131 @@
+@keyframes pulse {
+    0% {box-shadow: 0px 0px 10px 0px #FF0062;}
+    50% {box-shadow: 0px 0px 50px 10px #FF0062;}
+    100% {box-shadow: 0px 0px 10px 0px #FF0062;}
+  }
+  
+  body, html {
+    overflow: hidden;
+      /* colors */
+    background: linear-gradient(to right, #232526, #414345);
+      /* measures */
+    height: 100%;
+    width: 100%;
+      /* display */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+      /* colors */
+    background: #352933;
+      box-shadow: 0px 0px 50px 0px #FF0062;
+      /* sizes */
+    width: 40vw;
+    height: 54vw;
+      max-width: 350px;
+      max-height: 520px;
+      min-height: 520px;
+      min-width: 170px;
+      /* border */
+    border: 1px solid black;
+    border-radius: 45px;
+    /* animations */
+    animation-name: pulse;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  .sub-container {
+    margin: 20px;
+  }
+  
+  #display {
+      resize: none;
+      /* font */
+    text-align: right;
+    line-height: 100%;
+      font-size: 6vw;
+      /* colors */
+    background-color: #242933;
+    color: #FF0062;
+      /* border */
+    border: 1px solid black;
+    border-radius: 25px 25px 0 0;
+      /* sizes */
+    width: 98.2%;
+    height: 15vw;
+      max-height: 140px;
+      min-height: 140px;
+  }
+  
+  #display:focus {
+    outline: none;
+  }
+  
+  #display:hover {
+      cursor: default;
+  }
+  
+  .row-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .buttons {
+      /* sizes */
+    height: 30vw;
+      width: auto;
+      max-height: 290px;
+      min-height: 290px;
+      /* display */
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+  }
+  
+  .btn {
+      /* font */
+      font-family: monospace;
+      font-size: 16px;
+      /* border */
+    border: 1px solid black;
+      /* color */
+    color: #FF0062;
+    background-color: #242933;
+  }
+  
+  #clear {
+    width: 75%;
+    height: 3.2vw;
+      max-height: 39px;
+      min-height: 39px;
+    margin-top: -2px;
+  }
+  
+  #delete {
+      width: 25%;
+      height: 3.2vw;
+      max-height: 39px;
+      min-height: 39px;
+      margin-top: -2px;
+  }
+  
+  #radius-left {
+    border-radius: 0 0 0 25px;
+  }
+  
+  #radius-right {
+    border-radius: 0 0 25px 0;
+  }
+  
+  .hov:hover {
+    background-color: #352933;
+  }
+  
+  .hov:active {
+    background-color: #452933;
+  }
